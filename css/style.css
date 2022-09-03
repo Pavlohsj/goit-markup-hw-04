@@ -5,6 +5,7 @@
     --img-bgcolors: #EEEEEE;
     --blue-color: #2196f3;
     --button-bgcolor: #F5F4FA;
+    --icon-color: #AFB1B8;
 }
 
 h1,
@@ -83,7 +84,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .menu-nav {
@@ -100,8 +100,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin-right: 92px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-list {
@@ -123,6 +123,22 @@ body {
     column-gap: 50px;
 }
 
+.icon-mail,
+.icon-smartphone {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--grey-color);
+}
+
+
+
+.link-mail:hover .icon-mail,
+.link-mail:focus .icon-mail,
+.link-tel:hover .icon-smartphone,
+.link-tel:focus .icon-smartphone {
+    fill: var(--blue-color);
+}
+
 .link-mail,
 .link-tel {
     color: var(--grey-color);
@@ -130,6 +146,8 @@ body {
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link:hover,
@@ -150,7 +168,6 @@ body {
 }
 
 .main-filter {
-    width: 575px;
     margin-bottom: 50px;
 }
 
@@ -226,8 +243,13 @@ body {
 
 .footer-container {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.inf-box {
+    display: flex;
     flex-direction: column;
-    padding: 60px 0;
 }
 
 .footer-logo {
@@ -266,4 +288,49 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.footer-links-title {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 20px;
+}
+
+.soc-links {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: var(--blue-color);
+}
+
+.soc-icon {
+    fill: var(--icon-color);
+}
+
+.icon-link:hover .soc-icon,
+.icon-link:focus .soc-icon {
+    fill: var(--main-white);
 }

@@ -5,6 +5,9 @@
     --blue-color: #2196f3;
     --border-header-color: #ECECEC;
     --btn-active: #188CE8;
+    --bg-color: #F5F4FA;
+    --hero-bg-color: #C4C4C4;
+    --icon-color: #AFB1B8;
 }
 
 h1,
@@ -112,6 +115,22 @@ body {
     column-gap: 50px;
 }
 
+.icon-mail,
+.icon-smartphone {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--grey-color);
+}
+
+
+
+.link-mail:hover .icon-mail,
+.link-mail:focus .icon-mail,
+.link-tel:hover .icon-smartphone,
+.link-tel:focus .icon-smartphone {
+    fill: var(--blue-color);
+}
+
 .link-mail,
 .link-tel {
     color: var(--grey-color);
@@ -119,6 +138,8 @@ body {
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link:hover,
@@ -132,9 +153,15 @@ body {
 
 /* HERO */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-bg-color);
+    background-image: url(../images/hero.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
 }
 
 .hero-container {
@@ -195,6 +222,17 @@ body {
     max-width: 270px;
 }
 
+.features-icon {
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    margin-bottom: 30px;
+
+    background: var(--bg-color);
+    border-radius: 4px;
+}
+
 .features-item-title {
     color: var(--main-black);
     text-transform: uppercase;
@@ -248,7 +286,7 @@ body {
 
 /* TEAM */
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--bg-color);
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -306,6 +344,83 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.icons-social {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: var(--blue-color);
+}
+
+.team-icons {
+    fill: var(--icon-color);
+}
+
+.icon-link:hover .team-icons,
+.icon-link:focus .team-icons {
+    fill: var(--main-white);
+}
+
+.clients-section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container-clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients {
+    display: flex;
+    gap: 30px;
+}
+
+.bg-logo {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.bg-logo:hover,
+.bg-logo:focus {
+    border-color: var(--blue-color);
+}
+
+.logo-client {
+    fill: var(--icon-color);
+}
+
+.bg-logo:hover .logo-client,
+.bg-logo:focus .logo-client {
+    fill: var(--blue-color);
 }
 
 .footer {
@@ -314,8 +429,13 @@ body {
 
 .footer-container {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.inf-box {
+    display: flex;
     flex-direction: column;
-    padding: 60px 0;
 }
 
 .footer-logo {
@@ -354,4 +474,49 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.footer-links-title {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-white);
+    margin-bottom: 20px;
+}
+
+.soc-links {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    background-color: var(--blue-color);
+}
+
+.soc-icon {
+    fill: var(--icon-color);
+}
+
+.icon-link:hover .soc-icon,
+.icon-link:focus .soc-icon {
+    fill: var(--main-white);
 }
