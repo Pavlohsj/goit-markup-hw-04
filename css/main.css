@@ -2,7 +2,7 @@
     --main-black: #212121;
     --grey-color: #757575;
     --main-white: #ffffff;
-    --blue-color: #2196f3;
+    --accent-color: #2196f3;
     --border-header-color: #ECECEC;
     --btn-active: #188CE8;
     --bg-color: #F5F4FA;
@@ -51,7 +51,7 @@ img {
 }
 
 .span {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
 body {
@@ -110,6 +110,10 @@ body {
 
 }
 
+.nav-link.current {
+    color: var(--accent-color);
+}
+
 .menu-inform-list {
     display: flex;
     column-gap: 50px;
@@ -128,7 +132,7 @@ body {
 .link-mail:focus .icon-mail,
 .link-tel:hover .icon-smartphone,
 .link-tel:focus .icon-smartphone {
-    fill: var(--blue-color);
+    fill: var(--accent-color);
 }
 
 .link-mail,
@@ -148,13 +152,13 @@ body {
 .link-mail:focus,
 .link-tel:hover,
 .link-tel:focus {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
 /* HERO */
 .hero {
     background-color: var(--hero-bg-color);
-    background-image: url(../images/hero.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -183,7 +187,7 @@ body {
 }
 
 .hero-btn {
-    background-color: var(--blue-color);
+    background-color: var(--accent-color);
     color: var(--main-white);
     font-weight: 700;
     font-size: 16px;
@@ -363,7 +367,7 @@ body {
 
 .icon-link:hover,
 .icon-link:focus {
-    background-color: var(--blue-color);
+    background-color: var(--accent-color);
 }
 
 .team-icons {
@@ -411,7 +415,7 @@ body {
 
 .bg-logo:hover,
 .bg-logo:focus {
-    border-color: var(--blue-color);
+    border-color: var(--accent-color);
 }
 
 .logo-client {
@@ -420,7 +424,7 @@ body {
 
 .bg-logo:hover .logo-client,
 .bg-logo:focus .logo-client {
-    fill: var(--blue-color);
+    fill: var(--accent-color);
 }
 
 .footer {
@@ -509,7 +513,7 @@ body {
 
 .icon-link:hover,
 .icon-link:focus {
-    background-color: var(--blue-color);
+    background-color: var(--accent-color);
 }
 
 .soc-icon {
